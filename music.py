@@ -106,7 +106,7 @@ class pianoTrans():
         :param results:
         :return:
         '''
-        index = len(results)  
+        index = len(results)
         workbook = xlrd.open_workbook(os.path.join(save_path, file_name))
         sheets = workbook.sheet_names()
         worksheet = workbook.sheet_by_name(sheets[0])
